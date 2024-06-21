@@ -9,6 +9,7 @@ GPIO.setup(priPin, GPIO.IN)
 GPIO.setup(led, GPIO.OUT)
 
 try:
+<<<<<<< HEAD
   while True:
     if GPIO.input(priPin) == False:
       if GPIO.input(led) == False:
@@ -18,10 +19,20 @@ try:
     else:
       GPIO.OUT(led)==True:
         print("NO Detected")
+=======
+    while True:
+        if GPIO.input(priPin) == True:
+            GPIO.output(led, False)
+            print("Detected")
+        else:
+            GPIO.output(led, True)
+            print("NO Detected")
+>>>>>>> 09af5ee0d282e138b839ea12e278975905347edd
         time.sleep(0.5)
 
 except KeyboardInterrupt:
     GPIO.cleanup()
+<<<<<<< HEAD
 
 
 try:
@@ -37,3 +48,5 @@ try:
       else:
          Buzz.stop()
          time.sleep(0.1)
+=======
+>>>>>>> 09af5ee0d282e138b839ea12e278975905347edd
