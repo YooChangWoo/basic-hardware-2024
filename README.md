@@ -32,3 +32,16 @@
     - pir센서를 이용하여 led제어
 - 초음파 거리 센서
     - 초음파 거리 센서를 이용하여 부저 제어
+
+## 3일차
+- RELAY MODUL
+    - NO (NORMALLY OPEN) : 개방 터미널
+    - C (Common termianl) : 공통 터미널
+    - NC (NORMALLY CLOSED) : 폐쇄 터미널
+    - 사용방법 : 예를 들어 LED1, 2를 제어하는 경우, LED1에는 NC, COM을 연결하고 LED2에는 NO, COM을 연결합니다. 즉,COM은 공통단자입니다.
+
+- ULN2003
+- 스텝모터(28BYJ-48)
+
+- 가상환경 만들기
+    - python -m venv --system-site-packages env
